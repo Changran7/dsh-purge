@@ -1,3 +1,14 @@
+> **社区兼容性修复版 / Community compatibility fork**
+>
+> 基于 dsh-purge **1.1.72** 的 MIT 源码快照（上游 GitHub 仓库已转为私有）。
+> 修复 DeepSeek Harness **0.2.1-rc.2** 上 `unknown prompt variable "{{cwd}}"` 导致整轮提示注入失败的问题。
+>
+> - 安装：`pnpm add file:./dsh-purge-1.1.72-fix.1.tgz`（Release 里可下载）
+> - 改动说明：[FIXES.md](./FIXES.md)
+> - 非官方分支，原作者版权见 [LICENSE](./LICENSE)（MIT, Copyright (c) 2026 小杨）
+
+---
+
 <p align="center">
   <img src="docs/banner.svg" alt="dsh-purge" width="720">
 </p>
