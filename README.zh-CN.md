@@ -1,3 +1,11 @@
+> **本仓库是社区兼容性修复版，非原作者官方维护。**
+>
+> 基于 dsh-purge **1.1.72** 的 MIT 源码快照（上游仓库已私有）。已修复 DSH **0.2.1-rc.2** 上
+> unknown prompt variable "{{cwd}}" 报错。已移除原 README 的收款地址、招商位与对第三方的
+> 指名指控及截图，仅保留代码、MIT 许可、署名要求与合规声明。
+
+---
+
 <p align="center">
   <img src="docs/banner.svg" alt="dsh-purge" width="720">
 </p>
