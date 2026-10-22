@@ -4,15 +4,15 @@
 
 <h1 align="center">⚔️ DeepSeek Harness 网络安全红队工具（dsh-purge）</h1>
 
-<p align="center"><strong>Version 1.1.71</strong></p>
+<p align="center"><strong>Version 1.1.72-fix.1</strong></p>
 
 <p align="center">
   <em>DeepSeek Harness 破甲：让所有模型都能破甲，不同模型可换不同提示词；默认提示词面向国模「小码酱」。Jailbreak for every model — swap prompts per model. 求 Star 收藏 ⭐ 如要二开，请查看署名要求部分</em>
 </p>
 
 <p align="center">
-  <a href="https://github.com/YuJunZhiXue/dsh-purge/stargazers"><img src="https://img.shields.io/github/stars/YuJunZhiXue/dsh-purge?logo=github&label=Stars" alt="GitHub stars"></a>
-  <a href="https://github.com/YuJunZhiXue/dsh-purge/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-65a30d?style=flat" alt="MIT license"></a>
+  <a href="https://github.com/Changran7/dsh-purge/stargazers"><img src="https://img.shields.io/github/stars/Changran7/dsh-purge?logo=github&label=Stars" alt="GitHub stars"></a>
+  <a href="https://github.com/Changran7/dsh-purge/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-65a30d?style=flat" alt="MIT license"></a>
   <a href="https://awesome-dsh-plugin.com"><img src="https://awesome-dsh-plugin.com/badge.svg" alt="awesome · DSH plugin"></a>
   <a href="https://deepseek.stream/plugins/dsh-purge"><img src="https://img.shields.io/badge/Hub-dsh--purge-1a73e8" alt="DeepSeek Harness Hub"></a>
   <a href="https://www.deepseek.com/harness/"><img src="https://img.shields.io/badge/dsh-0.2.0--rc.2-blue" alt="DSH"></a>
@@ -26,25 +26,22 @@
 </p>
 
 <p align="center">
-  <a href="README.md"><strong>中文</strong></a> · <a href="README.en.md">English</a>
+  <a href="README.md"><strong>中文</strong></a>
 </p>
 
-> **暂时停更。**
+> **本仓库是社区兼容性修复版，非原作者官方维护。**
 >
-> 这段时间要先把工作安顿好，项目维护先放一放：暂不发新版本，暂不处理 issue / PR，新版 dsh 也不保证跟上。已经发布的版本可以继续用，仓库也还在。等我恢复维护，会写在这篇 README 开头。
->
-> 这个项目一直是业余在做。若它对你有帮助，欢迎看看下面的 [赞助](#sponsor)；也在征集 README [广告位](#ad)，换一点把项目撑下去的空间。
+> 上游仓库已转为私有，这里保留的是 **dsh-purge 1.1.72** 的 MIT 源码快照。
+> 已修复 DeepSeek Harness **0.2.1-rc.2** 上的 unknown prompt variable "{{cwd}}" 报错
+> （persona-suffix 段不再写入未注册变量），改动明细见 [FIXES.md](./FIXES.md)。
 
-> **官方 Web 和官方桌面端都支持。** 官方 `dsh web` 用 profile `web`；官方桌面 EXE（DeepSeek Harness **0.2.0-rc.2**）用 profile `desktop`。两边分开安装、分开点「应用」。当前版本只适配 dsh 0.2；更早的 dsh 用对应的老版本插件。社区桌面端不维护。
->
+
+> **官方 Web 和官方桌面端都支持。** 官方 `dsh web` 用 profile `web`；官方桌面 EXE（DeepSeek Harness **0.2.1-rc.2**）用 profile `desktop`。两边分开安装、分开点「应用」。当前版本适配 dsh 0.2.1（0.2.0 也可用）；更早的 dsh 用对应的老版本插件。社区桌面端不维护。
 > 写进 profile 还不会改宿主。点会话标题旁的 **dsh-purge** → **清洗** → **应用**。成功会自动重启；补丁没打完不重启。重启后新开一轮对话，注入才进当前会话。
->
-> Node.js **≥18**。Windows 无闪窗需要 **Node ≥22**。插件市场一键安装和下面的命令都走 npm 包 `dsh-purge`。
+> Node.js **≥18**。Windows 无闪窗需要 **Node ≥22**。安装方式见下方「安装」，或直接下载 Release 里的 dsh-purge-1.1.72-fix.1.tgz。
 
 ## 目录
 
-- [赞助](#sponsor)
-- [广告位](#ad)
 - [介绍](#介绍)
 - [署名要求](#署名要求)
 - [违规商用公示](#违规商用公示)
@@ -56,38 +53,6 @@
 - [工作原理](#工作原理)
 - [还原](#还原)
 - [更新](#更新)
-
----
-
-<a id="sponsor"></a>
-
-## ☕ 赞助
-
-这个项目要是帮到你了，欢迎打赏。我是讨口子，施舍点~
-
-
-| 资产          | 地址                                             |
-| ----------- | ---------------------------------------------- |
-| USDT（TRC20） | `TV5ajPkRD8RH623Dx9mqvYZVNN8nPGRKid`           |
-| Solana      | `6x16GhRgLVpKFFXaU1seKNdx2rypspSJTL4dbpt6Xpwk` |
-| Ethereum    | `0xB68BD60C0e8c519513B7DF9bB147696815423B3E`   |
-| Bitcoin     | `bc1qu70yxkrtwnymt8ryluz9x8y8hqzune5340npht`   |
-
----
-
-<a id="ad"></a>
-
-## 广告位
-
-README 长期有人看，现开放少量展示位。收入用于贴补业余维护。
-
-| 位置 | 状态 |
-| --- | --- |
-| 本页赞助区上方（文字链 + 一句介绍，或一张小图） | **空缺，可定** |
-
-名额少，谈妥再上。不接灰产、盗版、冒充本仓库、纯引流盘。
-
-合作请发邮件 [a2269198325@163.com](mailto:a2269198325@163.com)，或 GitHub [@YuJunZhiXue](https://github.com/YuJunZhiXue) 私信。标题注明「dsh-purge 广告位」。
 
 ---
 
